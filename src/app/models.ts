@@ -1,15 +1,15 @@
 export interface DynTable {
-  columns: TableColumn;
-  data: Array<TableData>;
+  columns: DynTableColumn;
+  data: Array<DynTableData>;
 }
 
-interface TableColumn {
+interface DynTableColumn {
   columnDef: string;
   header: string;
   cell: any;
 }
 
-interface TableData {
+interface DynTableData {
   name: string;
   value: string | number;
 }

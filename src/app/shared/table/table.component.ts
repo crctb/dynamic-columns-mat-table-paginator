@@ -39,7 +39,7 @@ export class TableComponent implements OnInit, OnChanges, AfterViewInit {
     this.displayedColumns = this.tableData.columns.map(c => c.columnDef);
     this.dataSource = new MatTableDataSource<any>(this.tableData.data);
 
-    this.dataSource.paginator = this.paginator;
+    this.dataSource.paginator = this.paginator; 
     this.dataSource.sort = this.sort;
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
