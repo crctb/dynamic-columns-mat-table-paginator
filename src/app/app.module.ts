@@ -3,6 +3,8 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { SatPopoverModule } from '@ncstate/sat-popover';
+
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -42,6 +44,7 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { TableComponent } from './shared/table/table.component';
 import { TestTableComponent } from './test-table/test-table.component';
+import { InlineEditComponent } from './shared/inline-edit/inline-edit.component';
 
 @NgModule({
   imports: [
@@ -49,6 +52,7 @@ import { TestTableComponent } from './test-table/test-table.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    SatPopoverModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
@@ -82,7 +86,7 @@ import { TestTableComponent } from './test-table/test-table.component';
     MatToolbarModule,
     MatTooltipModule
   ],
-  declarations: [AppComponent, HelloComponent, TableComponent, TestTableComponent],
+  declarations: [AppComponent, HelloComponent, TableComponent, TestTableComponent, InlineEditComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
