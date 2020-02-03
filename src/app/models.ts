@@ -1,5 +1,5 @@
 export interface DynTable {
-  columns: DynTableColumn;
+  columns: Array<DynTableColumn>;
   data: Array<DynTableData>;
 }
 

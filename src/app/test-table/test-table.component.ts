@@ -7,7 +7,6 @@ import { DynTable } from "./models";
   styleUrls: ["./test-table.component.css"]
 })
 export class TestTableComponent implements OnInit {
-
   tableData: DynTable;
 
   constructor() {}
